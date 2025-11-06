@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Online Poll</title>
+    <link rel="stylesheet" href="css/online-vote.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vote for Your Favorite Candidate</h1>
+        <div class="candidates">
+            <div class="candidate" data-candidate="PETEROBI">
+                
+                <h2>Peter Obi</h2>
+                <button onclick="vote('PETEROBI')">Vote</button>
+            </div>
+            <div class="candidate" data-candidate="TINUBU">
+                <h2>Ahmed Tinubu</h2>
+                <button onclick="vote('TINUBU')">Vote</button>
+            </div>
+        </div>
+        <div class="results">
+            <h2>Results</h2>
+            <div id="results-display"></div>
+            <button onclick="displayResults()">Show Results</button>
+            <button onclick="resetVotes()">Reset Poll</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
